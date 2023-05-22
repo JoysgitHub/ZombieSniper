@@ -13,7 +13,7 @@ public class Bullet extends Actor
     public Bullet()
     {   
         //This sets the bullet size
-        getImage().scale(25,45);
+        getImage().scale(25,15);
     }
     
     /**
