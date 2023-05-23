@@ -18,9 +18,9 @@ public class MainMenu extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(700, 600, 1);
         //This line of code adds the start button to the main menu.
-        addObject(new StartButton(),150,450);
+        addObject(new StartButton(),200,450);
         // This adds the Tutorial button to the "Main menu".
-        addObject(new TutorialButton(),380,450);
+        addObject(new TutorialButton(),500,450);
     }
      
 }
