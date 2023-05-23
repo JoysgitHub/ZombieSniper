@@ -28,7 +28,7 @@ public class Zombie extends Actor
     {   
         hero = mainHero;
         //This line sets the enemy sprite size.
-        getImage().scale(90,90); 
+        getImage().scale(80,80); 
     }
     
     public void act()

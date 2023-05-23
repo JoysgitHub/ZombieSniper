@@ -22,8 +22,7 @@ public class Bullet extends Actor
      */
     public void act()
     {
-        // This line of code moves the bullet up the screen by -8 from the y coordiante.
-        //setLocation(getX(),getY()-8);
+        // This line of code moves the bullet by 10
         move(10);
         //This line of code uses the built in method to check enemy collision.
         Zombie zombie = (Zombie)getOneIntersectingObject(Zombie.class);

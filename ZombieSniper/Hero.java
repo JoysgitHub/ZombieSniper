@@ -17,7 +17,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
     public Hero()
     {
         //This line of code sets the hero sprite size.
-        getImage().scale(100,100);
+        getImage().scale(110,110);
         
     }
     //This line of code creates a timer to space the bullets out.
