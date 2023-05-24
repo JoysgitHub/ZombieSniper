@@ -15,7 +15,7 @@ public class Exit extends Actor
      public Exit()
     {   
         //This sets the bullet size
-        getImage().scale(250,100);
+        getImage().scale(200,90);
     }
     public void act()
     {

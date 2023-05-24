@@ -77,6 +77,6 @@ public class MyWorld extends World
     {
 
         Music music = new Music();
-        addObject(music,650, 590);
+        addObject(music,630, 570);
     }
 }
