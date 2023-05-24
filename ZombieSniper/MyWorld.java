@@ -38,14 +38,14 @@ public class MyWorld extends World
       private void addLife()
     {
         heroLife.setValue(10);
-        addObject(heroLife, 60, 590);
+        addObject(heroLife, 58,34);
     }
     /*Thia function sets the hero score to 0 and adds the counter to the world to the 
      * specfied x and y coordinates*/
     private void addScore()
     {
         heroScore.setValue(0);
-        addObject(heroScore, 650, 590);
+        addObject(heroScore, 650,34);
     }
     /*This block of code creates a hero object using the Hero class, gets the screen width and divides 
      * it by two to get the x coordinate and then gets the hero width divides it by two and takes it away
@@ -77,6 +77,6 @@ public class MyWorld extends World
     {
 
         Music music = new Music();
-        addObject(music,58,34);
+        addObject(music,650, 590);
     }
 }

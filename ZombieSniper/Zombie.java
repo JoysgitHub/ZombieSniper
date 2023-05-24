@@ -62,13 +62,13 @@ public class Zombie extends Actor
         if (hero != null)
         {
             MyWorld.heroLife.add(-1);
-            Greenfoot.playSound("enemyexplode.mp3");
+            Greenfoot.playSound("Zombie_eat.mp3");
             /*This block of code uses an if statment to check if the hero life equals to 0,
              * if life equals to 0 it removes the hero object, plays the sound and sets the world to loose menu*/
             if (MyWorld.heroLife.getValue() == 0)
             {
                 getWorld().removeObject(hero);
-                Greenfoot.playSound("enemyexplode.mp3");
+                Greenfoot.playSound("Zombie_eat.mp3");
                 Greenfoot.setWorld(new LooseWorld());
             }
             getWorld().removeObject(this);

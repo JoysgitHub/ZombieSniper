@@ -37,7 +37,7 @@ public class Music extends Actor
             if(myMusic.isPlaying())
             {
                 myMusic.pause();
-                setImage("play.png");
+                setImage("Play.png");
             }else
             {
                 myMusic.playLoop();
