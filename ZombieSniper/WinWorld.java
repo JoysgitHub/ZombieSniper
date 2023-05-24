@@ -17,8 +17,8 @@ public class WinWorld extends World
         // Creates a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(700, 600, 1); 
         //This line of code adds the restart button to the Win world menu.
-        addObject(new RestartButton(),250,250);
+        addObject(new RestartButton(),360,310);
         // This adds the Exit button to the "WinWorld"
-        addObject(new Exit(),250,380);
+        addObject(new Exit(),360,410);
     }
 }

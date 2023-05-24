@@ -18,9 +18,9 @@ public class LooseWorld extends World
         // Create a new world with 500x600 cells with a cell size of 1x1 pixels.
         super(700, 600, 1);
         //This line of code adds the restart button to the loose world menu.
-        addObject(new RestartButton(),250,250);
+        addObject(new RestartButton(),360,310);
         // This adds the Exit button to the "looseworld".
-        addObject(new Exit(),250,380);
+        addObject(new Exit(),360,410);
         
     }
 }
