@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * and Tutorial button to the main menu.
  * 
  * @author (Joyson Cardoso, Keegan De souza) 
- * @version (6/12/2022)
+ * @version (25/05/2023)
  */
 public class MainMenu extends World
 {
@@ -15,7 +15,7 @@ public class MainMenu extends World
      */
     public MainMenu()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 700x600 cells with a cell size of 1x1 pixels.
         super(700, 600, 1);
         //This line of code adds the start button to the main menu.
         addObject(new StartButton(),360,310);

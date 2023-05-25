@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * This class is responsible for seting the world size and adding the restart button to itself.
  * 
  * @author (Joyson Cardoso, Keegan De souza) 
- * @version (6/12/2022)
+ * @version (25/05/2023)
  */
 public class LooseWorld extends World
 {
@@ -15,7 +15,7 @@ public class LooseWorld extends World
      */
     public LooseWorld()
     {    
-        // Create a new world with 500x600 cells with a cell size of 1x1 pixels.
+        // Create a new world with 700x600 cells with a cell size of 1x1 pixels.
         super(700, 600, 1);
         //This line of code adds the restart button to the loose world menu.
         addObject(new RestartButton(),200,450);

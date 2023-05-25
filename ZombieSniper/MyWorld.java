@@ -5,7 +5,7 @@
  * setting the main world size and spawning all the actors necessary for gameplay.
  * 
  * @author (Joyson Cardoso, Keegan DeSouza) 
- * @version (6/12/2022)
+ * @version (25/05/2023)
  */
 public class MyWorld extends World
 {
@@ -15,7 +15,7 @@ public class MyWorld extends World
     //These lines of code create the constants for the screen height and width.
     public static final int SCREEN_WIDTH = 700;
     public static final int SCREEN_HEIGHT = 600;
-    
+    //Makes the hero class accesible to the my world class
     public Hero mainHero = new Hero();
     /**
      * Constructor for objects of class MyWorld.
@@ -23,7 +23,7 @@ public class MyWorld extends World
     
     public MyWorld()
     {   
-        // This Creates a new world with 400x600 cells with a cell size of 1x1 pixels.
+        // This Creates a new world with 700x600 cells with a cell size of 1x1 pixels.
         super(SCREEN_WIDTH,SCREEN_HEIGHT, 1); 
         /*These lines of code call the addScore, addLife and addHero function which 
          * adds the counters and the hero to the screen.*/
@@ -40,7 +40,7 @@ public class MyWorld extends World
         heroLife.setValue(10);
         addObject(heroLife, 58,34);
     }
-    /*Thia function sets the hero score to 0 and adds the counter to the world to the 
+    /*This function sets the hero score to 0 and adds the counter to the world to the 
      * specfied x and y coordinates*/
     private void addScore()
     {
@@ -52,22 +52,21 @@ public class MyWorld extends World
        from the screen height to create the y coordinate and finally uses the two variables to add the hero to the screen*/
     private void addHero()
     {
-        //Hero hero = new Hero();
         int imageSize = mainHero.getImage().getWidth();
         int x = SCREEN_WIDTH/2;
         int y = (SCREEN_HEIGHT - imageSize/2);
         addObject(mainHero, x, y);
     }
     /*This function gets a random number between 1 and 60 to avoid adding too many enemys to the screen and
-     * adds the enemy to the screen using the addEnemy function*/
+     * adds the enemy to the screen using the addZombie function*/
     public void act()
     {
-        if (Greenfoot.getRandomNumber(20)<1)
+        if (Greenfoot.getRandomNumber(21)<1)
         {
             addZombie();
         }
     }
-   /*This function gets a random number between 0 - 480 and adds the enemy to a random x position when called*/
+   /*This function gets a random number between 0 - 680 and adds the enemy to a random x position when called*/
     public void addZombie()
     {
          addObject(new Zombie(mainHero), Greenfoot.getRandomNumber(680),0);
