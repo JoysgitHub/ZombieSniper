@@ -4,8 +4,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * This class creates a back button which allows the player to go back to the previous
  * page.
  * 
- * @author (Joyson Cardoso, Keegan De souza, Mohammad Matloob) 
- * @version (6/12/2022)
+ * @author (Joyson Cardoso, Keegan De souza) 
+ * @version (25/05/2023)
  */
 public class BackButton extends Actor
 {

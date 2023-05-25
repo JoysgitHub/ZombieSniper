@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * This class creates a Exit button which allows the player to exit the page.
  * 
  * @author (Joyson Cardoso, Keegan De souza, Mohammad Matloob) 
- * @version (6/12/2022)
+ * @version (25/05/2023)
  */
 public class Exit extends Actor
 {

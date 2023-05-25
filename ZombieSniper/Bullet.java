@@ -5,14 +5,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * adding to the hero score by checking for enemy collison and removing the bullet from the screen.
  * 
  * @author (Joyson Cardoso, Keegan DeSouza) 
- * @version (6/12/2022)
+ * @version (25/05/2023)
  */
 
 public class Bullet extends Actor
 {
+    //This sets the bullet size
     public Bullet()
     {   
-        //This sets the bullet size
         getImage().scale(25,15);
     }
     
@@ -23,7 +23,7 @@ public class Bullet extends Actor
     public void act()
     {
         // This line of code moves the bullet by 10
-        move(10);
+        move(11);
         //This line of code uses the built in method to check enemy collision.
         Zombie zombie = (Zombie)getOneIntersectingObject(Zombie.class);
         /*This block of code uses an if statment to check for collision with the enemy object.
@@ -35,15 +35,14 @@ public class Bullet extends Actor
             getWorld().removeObject(zombie);
             Greenfoot.playSound("ZombieDeath.mp3");
             getWorld().removeObject(this);
-           
-            //flashCounter = FLASH_DURATION;
             MyWorld.heroScore.add(5);
             if (MyWorld.heroScore.getValue() == 100)
             {
                 Greenfoot.setWorld(new WinWorld());
             }
         }  
-        //This if statment removes the hero bullet when it gets to 50 on the y axis.
+        //This if statment removes the hero bullet when it gets to 50 on the y axis 
+        //and 650 on the x axis.
         else if (getY() < 50)
         {
             getWorld().removeObject(this);
