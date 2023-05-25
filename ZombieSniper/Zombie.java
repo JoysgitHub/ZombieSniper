@@ -17,7 +17,7 @@ public class Zombie extends Actor
     /*These variables set the enemy speed, create a timer to space out the shooting 
      * and generate a random number between 1-8000 milliseconds. */
     //int enemySpeed = 3;
-    int extraTime = 995;
+    
     //int randomBullet = Greenfoot.getRandomNumber(8000);
     Hero hero;
     //This line of code creates a bullet timer object that keeps track of enenmy bullet time.
