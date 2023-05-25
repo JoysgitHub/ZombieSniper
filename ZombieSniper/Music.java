@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Music extends Actor
 {
     //This creates a myMusic object using the built in sound class
-    GreenfootSound myMusic =  new GreenfootSound("Game_Sound.mp3");
+    GreenfootSound myMusic =  new GreenfootSound("GameSound.mp3");
     boolean firstTurn = true;
     /**
      * Act - do whatever the Music wants to do. This method is called whenever
@@ -37,7 +37,7 @@ public class Music extends Actor
             if(myMusic.isPlaying())
             {
                 myMusic.pause();
-                setImage("play.png");
+                setImage("Play.png");
             }else
             {
                 myMusic.playLoop();

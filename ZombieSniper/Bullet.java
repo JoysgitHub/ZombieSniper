@@ -33,7 +33,7 @@ public class Bullet extends Actor
         if (zombie != null)
         {
             getWorld().removeObject(zombie);
-            //Greenfoot.playSound("enemyexplode.mp3");
+            Greenfoot.playSound("ZombieDeath.mp3");
             getWorld().removeObject(this);
            
             //flashCounter = FLASH_DURATION;

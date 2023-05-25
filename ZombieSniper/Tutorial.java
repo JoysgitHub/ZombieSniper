@@ -20,6 +20,6 @@ public class Tutorial extends World
         super(700, 600, 1); 
         
         // This adds the Back button to the "Tutorial Page".
-        addObject(new BackButton(),100,100);
+        addObject(new BackButton(),600, 540);
     }
 }

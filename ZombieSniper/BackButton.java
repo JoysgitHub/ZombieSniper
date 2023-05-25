@@ -16,7 +16,7 @@ public class BackButton extends Actor
      public BackButton()
     {   
         //This sets the bullet size
-        getImage().scale(100,100);
+        getImage().scale(100,70);
     }
     public void act()
     {
