@@ -4,8 +4,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * This class creates a tutorial button and allows the player to view the game 
  * instruction before gameplay.
  * 
- * @author (Joyson Cardoso, Keegan De souza, Mohammad Matloob) 
- * @version (6/12/2022)
+ * @author (Joyson Cardoso, Keegan De souza) 
+ * @version (25/05/2023)
  */
 public class TutorialButton extends Actor
 {
@@ -16,7 +16,7 @@ public class TutorialButton extends Actor
     
     public TutorialButton()
     {   
-        //This sets the bullet size
+        //This sets the Tutorial size
         getImage().scale(200,100);
     }
     public void act()

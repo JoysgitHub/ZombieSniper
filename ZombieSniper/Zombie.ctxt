@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Zombie
-comment0.text=\r\n\ This\ class\ is\ responsible\ for\ creating\ the\ enemy\ object,\ setting\ its\ speed,\ \r\n\ shooting\ the\ enemy\ bullet\ and\ removing\ the\ enemy\ \ \ .\r\n\ \r\n\ @author\ (Joyson\ Cardoso,\ Keegan\ De\ souza)\ \r\n\ @version\ (6/12/2022)\r\n
+comment0.text=\r\n\ This\ class\ is\ responsible\ for\ creating\ the\ zombie\ object,\ setting\ its\ speed,\ \r\n\ shooting\ removing\ life\ from\ hero,\ removing\ the\ enemy.\r\n\ \r\n\ @author\ (Joyson\ Cardoso,\ Keegan\ De\ souza)\ \r\n\ @version\ (25/05/2023)\r\n
 comment1.params=mainHero
 comment1.target=Zombie(Hero)
 comment2.params=
@@ -9,4 +9,5 @@ comment3.params=
 comment3.target=void\ moveTowards()
 comment4.params=
 comment4.target=void\ checkCollision()
+comment4.text=This\ function\ checks\ for\ collision\ with\ the\ hero\ object,\ deducts\ a\ life\ from\ the\ hero,\r\n\ \ \ \ \ \ \ plays\ a\ sound\ and\ the\ zombie\ object.\ \r\n-This\ also\ check\ if\ the\ hero\ life\ is\ 0\ and\ ends\ the\ game.
 numComments=5

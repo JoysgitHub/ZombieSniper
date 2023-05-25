@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * This class is responsible for adding the play/pause music function in the game.
  * 
- * @author (Joyson Cardoso, Keegan De souza, Mohammad Matloob) 
- * @version (22/12/2022)
+ * @author (Joyson Cardoso, Keegan De souza) 
+ * @version (25/05/2023)
  */
 public class Music extends Actor
 {
@@ -24,7 +24,7 @@ public class Music extends Actor
             firstTurn = false;
         }
         /*This statment stops the music to avoid looping issues on restarts. 
-           It does this by checking if the hero score is 45 or life is 1 and 
+           It does this by checking if the hero score is 95 or life is 1 and 
            uses the built in .stop() function to stop the music*/
         if(MyWorld.heroScore.getValue() == 95 || MyWorld.heroLife.getValue() == 1 )
         {

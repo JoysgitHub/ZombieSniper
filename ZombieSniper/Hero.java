@@ -5,7 +5,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * inputs and shooting the enemy.
  * 
  * @author (Joyson Cardoso, Keegan De souza) 
- * @version (6/12/2022)
+ * @version (25/05/2023)
  */
     public class Hero extends Actor
     {
@@ -18,29 +18,22 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
     {
         //This line of code sets the hero sprite size.
         getImage().scale(110,110);
-        
     }
     //This line of code creates a timer to space the bullets out.
     SimpleTimer bulletTimer = new SimpleTimer();
     //This creates a variable that is used to space out the hero bullet.
     int bulletSpacer = 900;
-    
     public void act()
     {
-        
-    
-        /*This block of code checks if the player presses the space bar and 
-         * If these two conditions are met it adds a hero bullet to the screen and plays a sound.  
-           */
         checkMouse();
         fireBullet();
     }
-    
+    /*This block of code checks if the player presses the space bar and*/
     public void checkMouse(){        
         if(Greenfoot.getMouseInfo() != null)
             turnTowards(Greenfoot.getMouseInfo().getX(), Greenfoot.getMouseInfo().getX());
     }
-    
+    /* If these two conditions are met it adds a hero bullet to the screen and plays a sound. */
     public void fireBullet(){
         
         if (Greenfoot.isKeyDown("space") && bulletTimer.millisElapsed() > bulletSpacer)
@@ -51,6 +44,5 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
             Greenfoot.playSound("enemyexplode.mp3");
             bulletTimer.mark();
         }
-        
     }
 }
